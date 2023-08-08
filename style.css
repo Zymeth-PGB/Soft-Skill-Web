@@ -5,6 +5,10 @@
     font-family: "Popins", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #111222;
 }
@@ -41,8 +45,8 @@ section {
 
 .content .image {
     position: relative;
-    width: 800px;
-    height: 400px;
+    width: 900px;
+    height: 500px;
     overflow: hidden;
 }
 
@@ -74,7 +78,7 @@ section {
 }
 
 .media-icons {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .media-icons a{
@@ -82,3 +86,45 @@ section {
     font-size: 2em;
     margin: 60px;
 }
+
+.section-title {
+    font-size: 3em;
+    margin-bottom: 80px;
+}
+
+.info-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.media-info {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.media-info li {
+    list-style: none;
+    font-size: 1.4em;
+}
+
+.media-info li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.media-info li:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+.media-info li:nth-child(1), .media-info li:nth-child(5) {
+    padding-left: 100px;
+} 
+
+.media-info li:nth-child(2), .media-info li:nth-child(4) {
+    padding-left: 50px;
+} 

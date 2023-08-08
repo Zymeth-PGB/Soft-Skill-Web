@@ -6,12 +6,13 @@
         <title>Hoa Sơn Luận Code</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
 
     <body>
         <section class="sec-01">
             <div class="container">
-                <h2 class="main-title">Introduce To Hoa Sơn Luận Code</h2>
+                <h2 class="main-title">Hoa Sơn Luận Code</h2>
                 <div class="content">
                     <div class="image">
                         <img src="Images/img1.jpg" alt="">
@@ -35,8 +36,53 @@
         <section class="sec-02">
             <div class="container">
                 <h3 class="section-title">Member</h3>
-                <div class="content"></div>
+                <div class="content">
+                    <div class="image">
+                        <img src="Images/img2.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <h4 class="info-title">Decription</h4>
+                        <p>Lazy Loading in JavaScript Back Lazy loading is a method used to defer the loading of non-essential 
+                        content until it becomes necessary for users to view it. It delays the display of certain elements, 
+                        such as images, videos, and other multimedia, until the user actively interacts with the webpage. 
+                        This article will look into the benefits of lazy loading</p>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <section class="sec-03">
+            <div class="container">
+                <h3 class="section-title">Contact</h3>
+                <div class="content">
+                    <div class="media-info">
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i> Youtube</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+                    </div>
+                    <div class="image">
+                        <img src="Images/img3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            ScrollReveal({
+                // reset: true,
+                distance: '60px',
+                duration: 2500,
+                delay: 400
+            });
+            ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin: 'left' });
+            ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+            ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+            ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+            ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+            ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+        </script>
+
     </body>
 </html>
