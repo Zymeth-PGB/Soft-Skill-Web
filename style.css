@@ -128,3 +128,86 @@ section {
 .media-info li:nth-child(2), .media-info li:nth-child(4) {
     padding-left: 50px;
 } 
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #50A7FF;
+    position: relative;
+    flex: 1;
+    max-width: 500px;
+    height: 300px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    height: 300px;
+    width: 300px;
+    opacity: 0.8;
+    position: relative;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+
+.card .details {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.card .details h4 {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 70px;
+    transition: 0.4s;
+    transition-property: transform;
+}
+
+.card:hover .details h4 {
+    transform: translateY(-30px);
+}
+
+.card .details p {
+    margin: 30px 30px 0 30px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+}
+
+.card:hover .details p {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+@media (max-width: 1080px) {
+    .image {
+        flex: 100%;
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 400px) {
+    .image .details p {
+        font-size: 16px;
+    }
+}
