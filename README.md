@@ -1,4 +1,4 @@
-# Soft Skill
+# Soft Skill Project
 
 21120042 - Phan Gia Bao
 
